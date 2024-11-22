@@ -46,4 +46,4 @@ fun SplashView(
 
 
     }
-}
+
