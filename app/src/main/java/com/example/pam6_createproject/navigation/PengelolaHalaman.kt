@@ -47,3 +47,19 @@ fun PengelolaHalaman(
             )
         }
 
+        // Mahasiswa Form Screen
+        composable(
+            route = Halaman.Mahasiswa.name
+        ) {
+            MahasiswaFormView(
+                onSubmitButtonClicked = {
+                    viewModel.setMahasiswa(it)
+                    navController.navigate(Halaman.Matakuliah.name)
+                },
+                onBackButtonClicked = {
+                    navController.popBackStack()
+                }
+            )
+        }
+
+
