@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pam6_createprojectTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        PengelolaHalaman(
+                        PengelolaHalaman
                             modifier = Modifier.padding(innerPadding)
                         )
                 }
