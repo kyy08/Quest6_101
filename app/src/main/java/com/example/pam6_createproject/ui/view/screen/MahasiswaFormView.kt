@@ -175,5 +175,16 @@ fun MahasiswaFormView(
             }
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMahasiswaFormView() {
+    MahasiswaFormView(
+        onSubmitButtonClicked = { },
+        onBackButtonClicked = { }
+    )
+}
+
 
 
