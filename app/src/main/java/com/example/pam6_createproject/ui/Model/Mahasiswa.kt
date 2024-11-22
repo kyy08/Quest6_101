@@ -6,4 +6,4 @@ data class Mahasiswa(
     val email: String = "",
     val namaMatakuliah: String= "",
     val kelas: String= "",
-)
+
