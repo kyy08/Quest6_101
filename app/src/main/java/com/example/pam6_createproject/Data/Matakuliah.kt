@@ -6,3 +6,4 @@ object Matakuliah {
         "Aplikasi Multimedia",
         "Kecerdasan Buatan",
     )
+}
