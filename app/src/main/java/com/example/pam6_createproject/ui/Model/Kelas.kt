@@ -8,4 +8,3 @@ object Kelas {
         R.string.B,
         R.string.C
     )
-}
