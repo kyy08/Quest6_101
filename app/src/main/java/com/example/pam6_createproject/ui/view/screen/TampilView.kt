@@ -95,5 +95,5 @@ fun PreviewTampilView() {
         onBackButtonClicked = { /* TODO */ },
         onResetButtonClicked = { /* TODO */ }
     )
-}
+
 
