@@ -21,7 +21,7 @@ enum class Halaman {
     Mahasiswa,
     Matakuliah,
     Tampil
-
+    }
 
 @Composable
 fun PengelolaHalaman(
@@ -35,7 +35,7 @@ fun PengelolaHalaman(
         navController = navController,
         startDestination = Halaman.Splash.name,
         modifier = Modifier.padding()
-    ) {
+    {
         // Splash Screen
         composable(
             route = Halaman.Splash.name
