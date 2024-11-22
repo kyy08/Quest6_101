@@ -77,6 +77,24 @@ fun PengelolaHalaman(
                 }
             )
         }
+        // Tampil Screen
+        composable(
+            route = Halaman.Tampil.name
+        ) {
+            TampilView(
+                uiState = uistate,
+                onBackButtonClicked = {
+                    navController.popBackStack() // Pop the current screen from the back stack
+                },
+                onResetButtonClicked = {
+                    navController.navigate(Halaman.Splash.name)
+                }
+            )
+        }
+    }
+}
+
+
 
 
 
