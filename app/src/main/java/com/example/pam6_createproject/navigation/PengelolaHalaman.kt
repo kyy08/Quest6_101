@@ -21,7 +21,7 @@ enum class Halaman {
     Mahasiswa,
     Matakuliah,
     Tampil
-}
+
 
 @Composable
 fun PengelolaHalaman(
