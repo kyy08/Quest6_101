@@ -62,4 +62,21 @@ fun PengelolaHalaman(
             )
         }
 
+        // Matakuliah Screen
+        composable(
+            route = Halaman.Matakuliah.name
+        ) {
+            MatakuliahView(
+                uiState = uistate,
+                onSimpanButtonClicked = {
+                    viewModel.setMatakuliah(it)
+                    navController.navigate(Halaman.Tampil.name)
+                },
+                onBackButtonClicked = { // Pass the onBackButtonClicked to MatakuliahView
+                    navController.popBackStack() // Pop the current screen from the back stack
+                }
+            )
+        }
+
+
 
