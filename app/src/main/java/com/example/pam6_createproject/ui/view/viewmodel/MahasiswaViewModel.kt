@@ -21,13 +21,4 @@ class MahasiswaViewModel: ViewModel() {
 
             )
         }
-    }
-    fun setMatakuliah(ls: List<String>){
-        _statusUI.update { statusSaatIni ->
-            statusSaatIni.copy(
-                namaMatakuliah = ls[0],
-                kelas = ls[1],
-            )
-        }
-    }
-}
+
