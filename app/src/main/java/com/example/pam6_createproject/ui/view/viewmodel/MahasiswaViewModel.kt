@@ -13,12 +13,23 @@ class MahasiswaViewModel: ViewModel() {
     val statusUI: StateFlow<Mahasiswa> = _statusUI.asStateFlow()
 
     fun setMahasiswa(ls: List<String>) {
-        _statusUI.update {statusSaatIni ->
+        _statusUI.update { statusSaatIni ->
             statusSaatIni.copy(
                 nim = ls[0],
                 nama = ls[1],
                 email = ls[2],
 
+                )
+        }
+    }
+
+    fun setMatakuliah(ls: List<String>){
+        _statusUI.update { statusSaatIni ->
+            statusSaatIni.copy(
+                namaMatakuliah = ls[0],
+                kelas = ls[1],
             )
         }
+    }
+}
 
